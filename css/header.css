@@ -1,0 +1,113 @@
+header{
+    height: 50vh;
+    width: 100vw;
+    background-image: url(/images/hero-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.menu-bar{
+    background-color: rgba(0, 0, 0, 0.698);
+    height: 80px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
+    
+}
+.menu-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar ul li{
+    padding: 10px 30px;
+    position: relative;
+   
+}
+.menu-bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px; 
+    font-weight: bold;
+    transition: 0.3s;
+
+   
+}
+
+.menu-bar ul li a:hover{
+    color:pink;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.dropdown-menu{
+    position: relative;
+    display: none;
+}
+
+.menu-bar ul li a:hover .dropdown-menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background:  rgba(0, 0, 0, 0.698);
+}
+.menu-bar ul li a:hover .dropdown-menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li a:hover .dropdown-menu ul li{
+    width: 150px;
+    padding: 10px;
+} 
+span{
+    color: pink;
+}
+.fa-solid{
+    color: white;
+    width: 100px;
+    height: auto;
+    
+}
+.fa-solid :hover{
+    color: pink;
+}
+
+button{
+    border: none;
+    background: pink;
+    padding: 12px 30px;
+    margin-left: 330px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.logo{
+    margin-right: 400px;
+    font-weight: bolder;
+    font-size: 30px;
+    transition: .4s;
+}
+.logo:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.hero-text{
+    text-align: left;
+    margin-top: 150px;
+    padding-inline-start: 900px;
+    color: rgb(29, 28, 28);
+    font-weight: bold;
+    font-size: 20px;
+}
