@@ -10,58 +10,75 @@
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css ">
    <link rel="stylesheet" href="/css/general.css">
     <title>UIB final project</title>
   </head>
   <body class="hero">
     <header>
-      <nav class="menu-bar">
-        <h2 class="logo">Mercy <span> Ojm</span> </h2>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Pages <i class="fas fa-caret-down"></i></a>
-          
-          <div class="dropdown-menu">
-            <ul>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Category</a></li>
-              <li><a href="#">Archive</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mercy<span>Ojm</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Light<span>Code.</span></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-        </li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <button type="button">Get An Appointment</button>
-      </nav>
-      <section class="hero-text">
-        <h5>Welcome</h5>
-        <h1>Exceptional IT Specialist Services</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam fugit illum recusandae cumque nam nesciunt ea qui, blanditiis voluptatem. Animi, nisi. Id, vero hic deleniti distinctio soluta ducimus provident officiis.</p>
-      </section>
-    </header>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Team</a></li>
+                  <li><a class="dropdown-item" href="#">Category</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
     <main>
       <section>
       <h5>Our <span>Services</span> </h5>
-      <h1>Our IT<span>Services</span></h1>
+      <h1>Our Lorem <span>Services</span></h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, asperiores veritatis! Earum assumenda, asperiores porro atque quae molestias hic culpa ab magnam accusantium magni minus voluptates delectus odit, impedit omnis?</p>
       </section>
       <div class="container">
         <div class="product-grid">
           <div class="card stacked">
-            <img src="/images/card-1.avif" alt class=" -img">
+            <img src="/images/card-1.avif" alt class="card-img">
             <div class="card-content">
               <h2 class="card-title">lorem</h2>
               <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis facilis dolorem quo quam impedit repellendus molestiae. Officiis, deserunt corrupti?</p>
-            </div>
+              <button type="button" class="card-menu">Read more</button></div>
           </div>
           <div class="card stacked">
             <img src="/images/card-2.avif" alt class="card-img">
             <div class="card-content">
               <h2 class="card-title">lorem</h2>
               <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis facilis dolorem quo quam impedit repellendus molestiae. Officiis, deserunt corrupti?</p>
+              <button type="button" class="card-menu">Read more</button>
             </div>
           </div>
           <div class="card stacked">
@@ -69,13 +86,15 @@
             <div class="card-content">
               <h2 class="card-title">lorem</h2>
               <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis facilis dolorem quo quam impedit repellendus molestiae. Officiis, deserunt corrupti?</p>
+              <button type="button" class="card-menu">Read more</button>
             </div>
           </div>
           <div class="card stacked">
-            <img src="/images/card-4.avif alt class="card-img">
+            <img src="/images/card-4.avif" alt class="card-img">
             <div class="card-content">
               <h2 class="card-title">lorem</h2>
               <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis facilis dolorem quo quam impedit repellendus molestiae. Officiis, deserunt corrupti?</p>
+              <button type="button" class="card-menu">Read more</button>
             </div>
           </div>
           <div class="card stacked">
@@ -83,6 +102,7 @@
             <div class="card-content">
               <h2 class="card-title">lorem</h2>
               <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis facilis dolorem quo quam impedit repellendus molestiae. Officiis, deserunt corrupti?</p>
+              <button type="button" class="card-menu">Read more</button>
             </div>
           </div>
           <div class="card stacked">
@@ -90,6 +110,7 @@
             <div class="card-content">
               <h2 class="card-title">lorem</h2>
               <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis facilis dolorem quo quam impedit repellendus molestiae. Officiis, deserunt corrupti?</p>
+              <button type="button" class="card-menu">Read more</button>
             </div>
           </div>
           <div class="card stacked">
@@ -97,13 +118,64 @@
             <div class="card-content">
               <h2 class="card-title">lorem</h2>
               <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis facilis dolorem quo quam impedit repellendus molestiae. Officiis, deserunt corrupti?</p>
+              <button type="button" class="card-menu">Read more</button>
             </div>
           </div>
-
+          <div class="card stacked">
+            <img src="/images/card-8.avif" alt class="card-img">
+            <div class="card-content">
+              <h2 class="card-title">lorem</h2>
+              <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis facilis dolorem quo quam impedit repellendus molestiae. Officiis, deserunt corrupti?</p>
+              <button type="button" class="card-menu">Read more</button>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="contact-form">
+        <article class="contact-box ">
+          <article class="left"></article>
+          <div class="right">
+          <h2>Contact Us</h2>
+          <!-- <label for="contact">Name:</label> -->
+          <input type="text" class="field" placeholder="Your Name">
+          <!-- <label for="email">E-mail:</label> -->
+          <input type="email" class="field" placeholder="Your Email">
+          <!-- <label for="phone number">Phone Number:</label> -->
+          <input type="text" class="field" placeholder="Your Phone Number">
+          <!-- <label for="message">Message:</label> -->
+          <textarea class="field area" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+          <button class="btn">Send</button>
+        </div>
+        </article>
       </div>
       
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Mercy<span>Ojm</span></h3>
+        <p class="footer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque molestiae quia ad cum temporibus voluptatibus doloremque eligendi consectetur earum illo.</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="footer-menu">
+        <ul class="f-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      </div>
+      <!-- footer ground -->
+     <div class="footer-bottom">
+      <p> Design By - <a href="#">MercyOjm</a></p>
+     </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
   </body>
 </html>
