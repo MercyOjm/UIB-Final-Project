@@ -1,7 +1,7 @@
 /*  all css file was linked here */
-@import url(/css/main.css);
-@import url(/css/header.css);
-@import url(/css/footer.css);
+@import url(./main.css);
+@import url(./header.css);
+@import url(./footer.css);
 
 /* page default setting */
 *{
