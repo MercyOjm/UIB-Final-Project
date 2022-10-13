@@ -1,4 +1,4 @@
-
+/* section for hero-img in the header */
 header{
     height: 50vh;
     width: 100vw;
@@ -17,5 +17,8 @@ header{
     font-weight: bold;
     font-size: 20px;
 }
+span {
+    color: pink;
+  }
  
  

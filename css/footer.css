@@ -1,3 +1,4 @@
+/* section for footer start here  */
 .footer{
     position: relative;
     bottom: 0;
@@ -90,6 +91,7 @@ h3{
     font-size: 16px;
     text-decoration: none;
 }
+/* mobile view for footer start here */
 @media (min-width: 500px) {
     .footer-menu{
         display: inline;

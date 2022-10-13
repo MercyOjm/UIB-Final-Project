@@ -1,3 +1,4 @@
+/* section for intro-text */
 section {
   text-align: center;
   margin-top: 40px;
@@ -15,7 +16,7 @@ section {
   align-items: center;
 }
 
-/* card section */
+/* card section start from here*/
 .container {
   max-width: 100vw;
   min-width: 100vw;
@@ -37,21 +38,6 @@ section {
   display: grid;
   grid-template-columns: 350px 350px 350px 350px;
   gap: 2em;
-}
-
-@media (max-width: 600px) {
-  .product-grid {
-    /* border: 1px solid red; */
-    grid-template-columns: 1fr;
-    width: 80vw;
-  }
-  .contact-box{
-    grid-template-columns: 1fr;
-    width: 80vw;
-}
-.left{
-    height: 200px;
-}
 }
 
 .card {
@@ -80,7 +66,19 @@ section {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
-/* forms--- */
+
+/* mobile view for card session  */
+
+@media (max-width: 600px) {
+  .product-grid {
+    /* border: 1px solid red; */
+    grid-template-columns: 1fr;
+    width: 80vw;
+  }
+
+}
+
+/* forms start from here--- */
 .contact-form {
   position: relative;
   display: flex;
@@ -210,6 +208,7 @@ h2::after {
   font-size: 20px;
 }
 
+/*  for mobile view for contact session */
 @media (max-width:600px){
   .contact-form{
     display: flex;
@@ -232,6 +231,4 @@ h2::after {
 
 
 
-span {
-  color: pink;
-}
+
